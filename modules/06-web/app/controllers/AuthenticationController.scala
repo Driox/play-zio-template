@@ -18,8 +18,6 @@ import utils.{ StringUtils, TimeUtils }
 
 import scala.concurrent.ExecutionContext
 
-import zio.ZIO
-
 case class AuthenticationCredentials(
   email:    String,
   password: String

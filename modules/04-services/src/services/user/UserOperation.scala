@@ -1,11 +1,14 @@
 package services.user
 
 import domain._
-import _root_.services.UserService
+
 import repository.UserRepository
-import zio.ZIO
+
+import _root_.services.UserService
 import effect.Fail
 import effect.zio.sorus.ZioSorus
+
+import zio.ZIO
 
 class UserOperation(user_repository: UserRepository) extends UserService with ZioSorus {
 

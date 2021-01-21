@@ -6,9 +6,9 @@ import domain._
 import repository.models.dao._
 
 import play.api.db.slick.HasDatabaseConfig
+import play.api.libs.json.JsValue
 
 import java.time.OffsetDateTime
-import play.api.libs.json.JsValue
 
 trait UserDao extends DomainMapping {
   self: HasDatabaseConfig[EnhancedPostgresDriver] =>

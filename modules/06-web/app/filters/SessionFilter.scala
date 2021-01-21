@@ -1,13 +1,19 @@
 package filters.web
 
 import domain._
+
 import services.UserService
+
 import akka.stream.Materializer
 import controllers.web.SecurityConstant
+import effect.Fail
 import javax.inject._
 import play.api.Configuration
+import play.api.Logging
 import play.api.mvc.Results.Redirect
 import play.api.mvc._
+import utils.TimeUtils
+import web.wiring.ZioRuntime
 
 import java.time.Instant
 import java.time.OffsetDateTime
@@ -15,11 +21,8 @@ import java.time.ZoneOffset
 
 import scala.concurrent.{ ExecutionContext, Future }
 import scala.util.Try
-import utils.TimeUtils
-import web.wiring.ZioRuntime
+
 import zio._
-import effect.Fail
-import play.api.Logging
 
 /**
  * BlackListCookieFilter is a filter that allow logout to disable session totally

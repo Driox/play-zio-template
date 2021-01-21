@@ -1,12 +1,12 @@
 package effect.zio.slick.zioslick
 
 import effect.Fail
+import play.api.Logging
 import slick.dbio.{ DBIO, StreamingDBIO }
 
 import zio.interop.reactivestreams._
 import zio.stream.ZStream
 import zio.{ Has, ZIO }
-import play.api.Logging
 
 object ZioSlickEffect extends Logging {
   def apply[T](action: DBIO[T]): ZioSlickEffect[T] = {

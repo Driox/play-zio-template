@@ -4,10 +4,11 @@ import domain._
 
 import repository.UserRepository
 
+import services.user.UserOperation
+
 import effect.Fail
 
 import zio._
-import services.user.UserOperation
 
 trait UserService {
 

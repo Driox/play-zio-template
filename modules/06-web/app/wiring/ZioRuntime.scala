@@ -1,16 +1,16 @@
 package web.wiring
 
 import repository._
+
 import services._
 
 import effect.zio.PlatformAppSpecific
 import javax.inject.{ Inject, Singleton }
-import play.api.libs.ws.WSClient
+import play.api.db.slick.DatabaseConfigProvider
 import play.api.{ Configuration, Logging }
 
 import zio.internal.Platform
 import zio.{ Cause, Has, Runtime, ZLayer }
-import play.api.db.slick.DatabaseConfigProvider
 
 @Singleton
 class ZioRuntime @Inject() (

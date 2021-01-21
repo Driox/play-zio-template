@@ -1,10 +1,10 @@
 package utils.json
 
-import play.api.libs.json._
+import play.api.Logging
 import play.api.libs.functional.syntax._
+import play.api.libs.json._
 
 import scala.util.Try
-import play.api.Logging
 
 /**
  * help : http://kailuowang.blogspot.fr/2013/11/addremove-fields-to-plays-default-case.html

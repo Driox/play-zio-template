@@ -1,10 +1,10 @@
 package domain
 
 import pl.iterators.kebs.tagged._
-
-import java.time.OffsetDateTime
 import play.api.libs.json.JsValue
 import utils.{ StringUtils, TimeUtils }
+
+import java.time.OffsetDateTime
 
 object UserTag {
   trait UserIdTag

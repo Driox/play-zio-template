@@ -1,6 +1,7 @@
 package operation
 
 import domain.User
+
 import security.HashUtils
 
 object UserOperation {
