@@ -1,0 +1,15 @@
+@(title       :String
+, styles      :Html         = Html("")
+, scripts     :Html         = Html("")
+)(content: Html)
+
+@main(
+  title,
+  styles,
+  scripts
+) {
+
+  <div class="container">
+    @content
+  </div>
+}
