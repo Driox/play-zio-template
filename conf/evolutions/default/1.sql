@@ -14,7 +14,7 @@ CREATE TABLE users (
     phone       text DEFAULT NULL,
     language    varchar(5) DEFAULT 'fr',
     birthday    timestamptz DEFAULT NULL,
-    tag         text DEFAULT NULL,
+    tag         text[] NOT NULL DEFAULT '{}',
     custom      jsonb DEFAULT NULL
 );
 
